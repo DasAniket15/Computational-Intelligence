@@ -1,7 +1,7 @@
 import numpy as np
 
 
-class Adaline_Or:
+class AdalineOr:
     def __init__(self, input_size, learning_rate=0.1, epochs=100):
         self.weights = np.random.randn(input_size)
         self.bias = np.random.randn()
@@ -34,7 +34,7 @@ def main():
     epochs = 100
 
     # Create and train ADALINE models for OR gates
-    or_model = Adaline_Or(input_size, learning_rate, epochs)
+    or_model = AdalineOr(input_size, learning_rate, epochs)
     or_model.train(X_or, y_or)
 
     # Test the trained models

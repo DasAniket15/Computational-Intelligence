@@ -1,7 +1,7 @@
 import numpy as np
 
 
-class Adaline_And:
+class AdalineAnd:
     def __init__(self, input_size, learning_rate=0.1, epochs=100):
         self.weights = np.random.randn(input_size)
         self.bias = np.random.randn()
@@ -34,7 +34,7 @@ def main():
     epochs = 100
 
     # Create and train ADALINE models for AND gates
-    and_model = Adaline_And(input_size, learning_rate, epochs)
+    and_model = AdalineAnd(input_size, learning_rate, epochs)
     and_model.train(X_and, y_and)
 
     # Test the trained models
